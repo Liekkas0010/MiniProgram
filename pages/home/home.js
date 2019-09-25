@@ -1,5 +1,10 @@
-Page({
+// 获取app.js对象
+const app = getApp();
 
+const name = app.globalData.name;
+const userNo = app.globalData.userNo;
+
+Page({
   /**
    * 页面的初始数据
    */
@@ -25,11 +30,24 @@ Page({
     });
   },
 
+  handlerGetUserInfo(event){
+    console.log(event.detail.userInfo);
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.request({
+      url: 'http://api.t.dms.yili.com/api/order/get.do?id=1',
+      // 箭头语法
+      success: (res) => {
+        const result = res.data;
+        this.setData({
+          msg: result.msg
+        })
+      }
+    })
   },
 
   /**

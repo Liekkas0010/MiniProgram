@@ -11,4 +11,8 @@
 
 <!-- 监听事件 -->
 <view>{{count}}</view>
-<button bindtap="handlerBtnClick">测试绑定事件</button>
+<button bindtap="handlerBtnClick" size="mini">测试绑定事件</button>
+<button bindgetuserinfo="handlerGetUserInfo" size="mini" open-type="getUserInfo">测试获取用户信息</button>
+<open-data type="groupName"></open-data>
+
+<view>{{msg}}</view>
