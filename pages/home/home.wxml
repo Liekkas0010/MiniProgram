@@ -16,3 +16,12 @@
 <open-data type="groupName"></open-data>
 
 <view>{{msg}}</view>
+
+<view class="btn-area">
+  <view class="body-view">
+    <text selectable decode>hello MiniProgram\n</text>
+    <text>你好小程序\n</text>
+    <button bindtap="add">add line</button>
+    <button bindtap="remove">remove line</button>
+  </view>
+</view>
