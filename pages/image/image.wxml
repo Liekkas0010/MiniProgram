@@ -1,0 +1,7 @@
+
+<!-- http://hbimg.b0.upaiyun.com/fb2b4aeb1e4ae24da97c248fb30ec7b77078ac345ee7d-vasdzL_fw658 -->
+<image src="http://hbimg.b0.upaiyun.com/fb2b4aeb1e4ae24da97c248fb30ec7b77078ac345ee7d-vasdzL_fw658"></image>
+
+<button bindtap="chooseImage">选择图片</button>
+
+<image src="{{imagePath}}"/>

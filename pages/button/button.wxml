@@ -1,0 +1,8 @@
+
+<button size="mini" type="primary">按钮1</button>
+<button size="mini" type="warn" plain="{{true}}">按钮2</button>
+
+<button size="mini" plain disabled="{{idDisabled}}">按钮3</button>
+<button size="mini" plain loading="{{isLoading}}">按钮4</button>
+
+<button hover-class="btnStyle">按钮5</button>
