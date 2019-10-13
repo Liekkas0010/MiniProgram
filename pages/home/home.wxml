@@ -1,4 +1,18 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello MiniProgram</text>
+
+<!--数据绑定：Mustache语法{{Object}}-->
+<text class="title">Hello {{name}}，您今年{{age}}岁</text>
+
 <button class="loginBtn">登录</button>
 <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568388613771&di=e70902732c3a1cb6877e15485c9e0fef&imgtype=0&src=http%3A%2F%2F01.imgmini.eastday.com%2Fmobile%2F20180528%2F20180528152045_3595aede32985f558764db3b5227d85a_2.jpeg"></image>
+
+<!--列表展示,item是官方提供的，表示当前遍历的数据-->
+<view wx:for = "{{employees}}">姓名：{{item.name}}，工号：{{item.no}}</view>
+
+<!-- 监听事件 -->
+<view>{{count}}</view>
+<button bindtap="handlerBtnClick" size="mini">测试绑定事件</button>
+<button bindgetuserinfo="handlerGetUserInfo" size="mini" open-type="getUserInfo">测试获取用户信息</button>
+<open-data type="groupName"></open-data>
+
+<view>{{msg}}</view>
